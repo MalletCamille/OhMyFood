@@ -39,6 +39,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .header {
@@ -50,6 +51,7 @@ body {
 .header .container__logo {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   width: 100%;
   margin: 0;
   padding: 14px 89px 13px 89px;
@@ -67,7 +69,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color-grey-2);
-  width: 375px;
   height: 50px;
   box-sizing: border-box;
   margin: 0;
