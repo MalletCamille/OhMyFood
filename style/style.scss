@@ -85,4 +85,35 @@ body {
     }
 }
 
-    
+//***Footer*** //    
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    background-color: var(--bg-color-dark-grey);
+    gap: 16px;
+        .logo__footer {
+            height: 27px;
+            width: 25%;
+            filter: invert(1);
+        }    
+        .list__footer {
+            gap: 7px;
+            display: flex;
+            flex-direction: column;
+           .list__footer {
+                gap: 11px;
+                display: flex;
+                flex-direction: row;
+                .icon__footer {
+                    filter: invert(1);
+                }    
+                .link__footer {
+                        color: white;
+                }
+            }
+        } 
+        
+}

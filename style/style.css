@@ -82,4 +82,34 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 25px;
+  background-color: var(--bg-color-dark-grey);
+  gap: 16px;
+}
+.footer .logo__footer {
+  height: 27px;
+  width: 25%;
+  filter: invert(1);
+}
+.footer .list__footer {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .list__footer .list__footer {
+  gap: 11px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .list__footer .list__footer .icon__footer {
+  filter: invert(1);
+}
+.footer .list__footer .list__footer .link__footer {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
