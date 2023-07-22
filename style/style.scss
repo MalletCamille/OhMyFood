@@ -16,10 +16,6 @@
     --green-font: #008766;
 }
 
-.fa-solid {
-    color: var(--bg-color-dark-grey);
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -39,13 +35,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-//*** Titles *** //
-
-h1 {
-    font-size: 24px;
-    font-weight: 700;
 }
 
 //*** Header *** //
@@ -92,7 +81,7 @@ h1 {
     }
 }
 
-//*** Section Main Title and Exploration *** //
+//*** Main Title and Exploration Section *** //
 
 .section__exploration__button {
     display: flex;
@@ -126,8 +115,84 @@ h1 {
     }   
 }
 
+//*** Functioning Section *** //
 
+.section__functioning {
+    display: flex;
+    flex-direction: column;
+    .h2__functioning {
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 48px;
+        margin-left: 20px;
+        margin-bottom: 26px;
+    }    
+    .container__functioning__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 68px;
+    }  
+}          
+            .functioning__buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap : 27px;
+                border-radius: 20px;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                background-color: var(--main-bg-color);
+                height: 73px;
+                width: 80%;
+                border: none;
+                font-size: 16px;font-weight: 500;
+            }
 
+                .icon__functioning__button--grey {
+                    color:#7e7e7e
+                }
+
+                .icon__functioning__button--purple {
+                    color: var(--primary-color);
+                }
+  
+    .badge__1{
+        position: absolute;
+        bottom: 353px;
+        left: 28px;
+    }        
+    .txt__badge__1{
+        position: absolute;
+        right: 370px;
+        bottom: 356px;
+        color: white;
+    }    
+    .badge__2{
+        position: absolute;
+        bottom: 254px;
+        left: 28px;
+    }        
+    .txt__badge__2{
+        position: absolute;
+        right: 370px;
+        bottom: 258px;
+        color: white;
+    }    
+    .badge__3{
+        position: absolute;
+        bottom: 156px;
+        left: 28px;
+    }        
+    .txt__badge__3{
+        position: absolute;
+        right: 370px;
+        bottom: 159px;
+        color: white;
+    }    
+           
+    
+   
 
 
 //*** Footer *** //    
