@@ -90,20 +90,24 @@ body {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  margin: 39px 42px 0px 58px;
+  margin-top: 39px;
+  width: 75%;
+  padding: 2px 15px 15px 15px;
 }
 .section__exploration__button .main__subtitle {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   color: var(--bg-color-dark-grey);
-  margin: 0px 34px 27px 26px;
+  margin-bottom: 27px;
+  width: 85%;
+  padding: 2px 5px 0px 5px;
 }
 .section__exploration__button .exploration__button {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  margin: 0px 82px 52px 75px;
+  margin-bottom: 57px;
   width: 50%;
   height: 50px;
   border: none;
@@ -123,12 +127,16 @@ body {
   margin-left: 20px;
   margin-bottom: 26px;
 }
-.section__functioning .container__functioning__buttons {
+.section__functioning .container__all__functioning__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
   margin-bottom: 68px;
+}
+.section__functioning .container__all__functioning__buttons .container__functioning__button {
+  width: 80%;
+  position: relative;
 }
 
 .functioning__buttons {
@@ -136,11 +144,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 27px;
+  position: relative;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--main-bg-color);
   height: 73px;
-  width: 80%;
+  width: 100%;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -154,43 +163,19 @@ body {
   color: var(--primary-color);
 }
 
-.badge__1 {
+.badge {
   position: absolute;
-  bottom: 353px;
-  left: 28px;
+  top: 25px;
+  left: -12px;
+  z-index: 1;
 }
 
-.txt__badge__1 {
+.txt__badge {
   position: absolute;
-  right: 370px;
-  bottom: 356px;
+  left: -5px;
+  bottom: 26px;
   color: white;
-}
-
-.badge__2 {
-  position: absolute;
-  bottom: 254px;
-  left: 28px;
-}
-
-.txt__badge__2 {
-  position: absolute;
-  right: 370px;
-  bottom: 258px;
-  color: white;
-}
-
-.badge__3 {
-  position: absolute;
-  bottom: 156px;
-  left: 28px;
-}
-
-.txt__badge__3 {
-  position: absolute;
-  right: 370px;
-  bottom: 159px;
-  color: white;
+  z-index: 2;
 }
 
 .footer {
