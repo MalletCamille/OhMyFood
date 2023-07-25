@@ -187,6 +187,7 @@ body {
     width: 100%;
     background-color: var(--main-bg-color);
     gap: 18px;
+    padding-bottom: 66px;
     &__title {
         display: flex;
         align-self: flex-start;
@@ -261,7 +262,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 66px;
     padding: 22px 25px;
     background-color: var(--bg-color-dark-grey);
     gap: 16px;

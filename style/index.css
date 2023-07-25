@@ -178,6 +178,7 @@ body {
   width: 100%;
   background-color: var(--main-bg-color);
   gap: 18px;
+  padding-bottom: 66px;
 }
 .section-restaurants__title {
   display: flex;
@@ -246,7 +247,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 66px;
   padding: 22px 25px;
   background-color: var(--bg-color-dark-grey);
   gap: 16px;
