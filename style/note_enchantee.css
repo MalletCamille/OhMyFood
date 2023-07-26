@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-bg-color: #F6F6F6;
+  --primary-color: #9356DC;
+  --bg-color-green: #99e2d0;
+  --bg-color-blue: #89c8fa;
+  --bg-color-dark-grey: #353535;
+  --bg-color-grey-2: #Eaeaea;
+  --bg-color--dark-blue: #003a68;
+  --green-font: #008766;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding-inline-start: 0em;
+  margin-block-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header .logo {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 14px 89px 13px 89px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header .logo__img {
+  display: flex;
+  padding: 0 19px 0 16px;
+  width: 162px;
+  height: 44px;
+}
+
+.restaurant {
+  width: 100%;
+}
+.restaurant__img {
+  position: relative;
+  width: 100%;
+  height: 275px;
+}
+.restaurant__title {
+  position: relative;
+  top: -20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: var(--main-bg-color);
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 32px;
+  padding-left: 17px;
+  padding-bottom: 40px;
+}
+.restaurant__heart {
+  position: absolute;
+  right: 30px;
+  top: 370px;
+  font-size: 28px;
+}
+
+.menu {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+.menu__starters {
+  display: flex;
+  flex-direction: column;
+}
+.menu .starters__title {
+  width: 38px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 17px;
+  border-bottom: var(--bg-color-green) 2px solid;
+  border-bottom-width: 3px;
+}
+
+.card {
+  position: relative;
+  margin-top: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card__dish-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.card__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.card__price {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+  right: 30px;
+  bottom: 18px;
+}
+
+.dishes__title {
+  width: 38px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-left: 17px;
+  border-bottom: var(--bg-color-green) 2px solid;
+  border-bottom-width: 3px;
+}
+
+.card {
+  position: relative;
+  margin-top: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card__dish-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.card__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.card__price {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+  right: 30px;
+  bottom: 18px;
+}
+
+.menu__desserts {
+  padding-bottom: 40px;
+}
+
+.desserts__title {
+  width: 38px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-left: 17px;
+  border-bottom: var(--bg-color-green) 2px solid;
+  border-bottom-width: 3px;
+}
+
+.card {
+  position: relative;
+  margin-top: 12px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.card__dish-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.card__description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.card__price {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+  right: 30px;
+  bottom: 18px;
+}
+
+.container__order-button {
+  display: flex;
+  justify-content: center;
+}
+
+.order-button {
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  width: 50%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.footer {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 25px;
+  background-color: var(--bg-color-dark-grey);
+  gap: 16px;
+}
+.footer__logo {
+  height: 27px;
+  width: 25%;
+  filter: invert(1);
+}
+.footer__list {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__list-item {
+  gap: 11px;
+  display: flex;
+  flex-direction: row;
+}
+.footer__list-item .footer__icon {
+  filter: invert(1);
+}
+.footer__list-item .footer__link {
+  color: white;
+}/*# sourceMappingURL=note_enchantee.css.map */
