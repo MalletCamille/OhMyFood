@@ -42,6 +42,13 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.header__icon {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  font-size: 30px;
+  z-index: 3;
+}
 .header .logo {
   display: flex;
   justify-content: center;
@@ -107,6 +114,29 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
+.menu__dishes .dishes__title {
+  width: 38px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-left: 17px;
+  border-bottom: var(--bg-color-green) 2px solid;
+  border-bottom-width: 3px;
+}
+.menu__desserts {
+  padding-bottom: 40px;
+}
+.menu__desserts .desserts__title {
+  width: 38px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-left: 17px;
+  border-bottom: var(--bg-color-green) 2px solid;
+  border-bottom-width: 3px;
+}
 
 .card {
   position: relative;
@@ -133,38 +163,11 @@ body {
   bottom: 18px;
 }
 
-.dishes__title {
-  width: 38px;
-  height: 27px;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 40px;
-  margin-left: 17px;
-  border-bottom: var(--bg-color-green) 2px solid;
-  border-bottom-width: 3px;
-}
-
-.menu__desserts {
-  padding-bottom: 40px;
-}
-
-.desserts__title {
-  width: 38px;
-  height: 27px;
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 40px;
-  margin-left: 17px;
-  border-bottom: var(--bg-color-green) 2px solid;
-  border-bottom-width: 3px;
-}
-
 .container__order-button {
   display: flex;
   justify-content: center;
 }
-
-.order-button {
+.container__order-button .order-button {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
