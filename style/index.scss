@@ -56,7 +56,6 @@ body {
             display: flex;
             padding: 0 19px 0 16px;
             width: 162px;
-            height: 44px;
         }
     }
     .location {
@@ -266,7 +265,6 @@ body {
     background-color: var(--bg-color-dark-grey);
     gap: 16px;
         &__logo {
-            height: 27px;
             width: 25%;
             filter: invert(1);
         }    

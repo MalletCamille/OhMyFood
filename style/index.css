@@ -55,7 +55,6 @@ body {
   display: flex;
   padding: 0 19px 0 16px;
   width: 162px;
-  height: 44px;
 }
 .header .location {
   display: flex;
@@ -252,7 +251,6 @@ body {
   gap: 16px;
 }
 .footer__logo {
-  height: 27px;
   width: 25%;
   filter: invert(1);
 }
