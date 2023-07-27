@@ -136,6 +136,7 @@ body {
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   margin-bottom: 57px;
   width: 50%;
+  max-width: 288px;
   height: 50px;
   border: none;
   color: white;
@@ -189,6 +190,7 @@ body {
   background-color: var(--main-bg-color);
   height: 73px;
   width: 100%;
+  min-width: 123px;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -206,7 +208,6 @@ body {
   align-items: center;
   width: 100%;
   background-color: var(--main-bg-color);
-  gap: 18px;
   padding-bottom: 66px;
 }
 .section-restaurants__title {
@@ -216,6 +217,14 @@ body {
   font-weight: 700;
   margin-left: 20px;
   margin-top: 54px;
+  margin-bottom: 26px;
+}
+.section-restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
 }
 .section-restaurants__card {
   position: relative;
@@ -275,25 +284,25 @@ body {
 /******************** Media queries ********************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (min-width: 770px) {
-  .section-exploration__button {
-    width: 15%;
+  .section-functioning__wrapper {
+    width: 100%;
   }
+}
+/* Big devices (Desktop, more than 1024px) */
+@media screen and (min-width: 1024px) {
   .section-functioning {
-    padding: 50px 180px;
-  }
-  .section-functioning__title {
-    margin-left: 0px;
+    padding: 50px clamp(2px, 5%, 180px);
   }
   .section-functioning__wrapper {
     flex-direction: row;
-    width: 100%;
   }
   .section-restaurants {
-    padding: 0px 180px;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px 100px;
+    width: 100%;
   }
   .section-restaurants__card {
-    width: 40%;
+    width: 35%;
   }
-}
-/* Big devices (Desktop, more than 1024px) *//*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

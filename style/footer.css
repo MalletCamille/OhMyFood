@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 25px;
+  background-color: var(--bg-color-dark-grey);
+  gap: 16px;
+}
+.footer__logo {
+  width: 25%;
+  filter: invert(1);
+}
+.footer__list {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__list-item {
+  gap: 11px;
+  display: flex;
+  flex-direction: row;
+}
+.footer__list-item .footer__icon {
+  filter: invert(1);
+}
+.footer__list-item .footer__link {
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

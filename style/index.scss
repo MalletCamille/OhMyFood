@@ -95,6 +95,7 @@ body {
             background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
             margin-bottom: 57px;
             width: 50%;
+            max-width: 288px;
             height: 50px;
             border: none;
             color: white;
@@ -150,6 +151,7 @@ body {
                 background-color: var(--main-bg-color);
                 height: 73px;
                 width: 100%;
+                min-width: 123px;
                 border: none;
                 font-size: 16px;
                 font-weight: 500;
@@ -170,7 +172,6 @@ body {
     align-items: center;
     width: 100%;
     background-color: var(--main-bg-color);
-    gap: 18px;
     padding-bottom: 66px;
     &__title {
         display: flex;
@@ -179,7 +180,15 @@ body {
         font-weight: 700;
         margin-left: 20px;
         margin-top: 54px;
+        margin-bottom: 26px;
     }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+    }    
     &__card {
         position: relative;
         display: flex;
@@ -187,7 +196,7 @@ body {
         width: 95%;
         border-radius: 15px;
         background-color: white;
-        height: auto;
+        height: auto;    
         .card {
             &__new {
                 position: absolute;
@@ -233,10 +242,11 @@ body {
                 right: 30px;
                 bottom: 20px;
             }
+            
         }
     }
+    
 }
-
 
 /******************** Media queries ********************/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -244,35 +254,106 @@ body {
     //*** Main Title and Exploration Section *** //
     .section-exploration {
         &__button {
-            width: 15%;
         }    
     }
     //*** Functioning Section *** //
+
     .section-functioning {
-        padding: 50px 180px;
         &__title {
-            margin-left: 0px;
-        }
-        &__wrapper {
-            flex-direction: row;
-            width: 100%;
         }    
+        &__wrapper {
+                width: 100%;
+            }  
+            &__container {
+            }     
+                &__badge {
+                }  
+                &__badge-txt {
+                } 
+                &__button {     
+    
+                }
+                    &__icon {
+                    
+                        &--purple {
+                        }
+                    }
     }
+
     //*** Restaurants Section *** //
     .section-restaurants {
-        padding: 0px 180px;
-        flex-wrap: wrap;
+
         &__card {
-            width: 40%;
+
         }
     }
-
-
 
 }
 
 /* Big devices (Desktop, more than 1024px) */
 @media screen and (min-width: 1024px) {
 
+    //*** Main Title and Exploration Section *** //
+    .section-exploration {
+        &__button {
+
+        }    
+    }
+
+      //*** Functioning Section *** //
+
+    .section-functioning {
+        padding: 50px clamp(2px, 5%, 180px);
+        &__title {
+     
+        }    
+        &__wrapper {
+            flex-direction: row;
+            }  
+            &__container {
+            
+            }     
+                &__badge {
+        
+                }  
+                &__badge-txt {
+   
+                } 
+                &__button {           
+              
+                }
+                    &__icon {
+          
+                        &--purple {
+                       
+                        }
+                    }
+    }
+
+        //*** Restaurants Section *** //
+
+        .section-restaurants {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px 100px;
+            width: 100%;
+            &__title {
+            }
+            &__card {
+                width: 35%;
+                .card {
+                    &__new {
+                    }
+                    &__img {
+                    }
+                    &__title {
+                    }
+                    &__location {
+                    }
+                    &__heart {
+                    }
+                }
+            }
+        }
 }    
     
