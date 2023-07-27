@@ -72,6 +72,12 @@ body {
 
 .restaurant {
     width: 100%;
+    position: relative;
+
+    width: 100%;
+    background-color: var(--main-bg-color);
+    padding: 0 10px;
+    box-sizing: border-box;
     &__img {
         position: relative;
         width: 100%;
@@ -96,18 +102,6 @@ body {
         top : 370px;
         font-size: 28px;
     }
-}
-.menu {
-    position: relative;
-    top:-20px;
-    width: 100%;
-    background-color: var(--main-bg-color);
-    padding: 0 10px;
-    box-sizing: border-box;
-    &__starters {
-        display: flex;
-        flex-direction: column;
-    }
     .starters {
         &__title {
             width: 38px;
@@ -119,7 +113,7 @@ body {
             border-bottom-width: 3px;
         }
     }
-    &__dishes {
+    .dishes {
         .dishes__title {
             width: 38px;
             height: 27px;
@@ -131,7 +125,7 @@ body {
             border-bottom-width: 3px;
         }
     }
-    &__desserts {
+    .desserts {
         padding-bottom: 40px ;
         .desserts__title {
             width: 38px;
@@ -194,7 +188,6 @@ body {
 
 .footer {
     position: relative;
-    top:-20px;
     $self: &;
     display: flex;
     flex-direction: column;

@@ -271,4 +271,30 @@ body {
 }
 .footer__list-item .footer__link {
   color: white;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/******************** Media queries ********************/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (min-width: 770px) {
+  .section-exploration__button {
+    width: 15%;
+  }
+  .section-functioning {
+    padding: 50px 180px;
+  }
+  .section-functioning__title {
+    margin-left: 0px;
+  }
+  .section-functioning__wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+  .section-restaurants {
+    padding: 0px 180px;
+    flex-wrap: wrap;
+  }
+  .section-restaurants__card {
+    width: 40%;
+  }
+}
+/* Big devices (Desktop, more than 1024px) *//*# sourceMappingURL=index.css.map */

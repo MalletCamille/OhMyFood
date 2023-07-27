@@ -67,6 +67,11 @@ body {
 
 .restaurant {
   width: 100%;
+  position: relative;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 .restaurant__img {
   position: relative;
@@ -92,20 +97,7 @@ body {
   top: 370px;
   font-size: 28px;
 }
-
-.menu {
-  position: relative;
-  top: -20px;
-  width: 100%;
-  background-color: var(--main-bg-color);
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-.menu__starters {
-  display: flex;
-  flex-direction: column;
-}
-.menu .starters__title {
+.restaurant .starters__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -114,7 +106,7 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.menu__dishes .dishes__title {
+.restaurant .dishes .dishes__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -124,10 +116,10 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.menu__desserts {
+.restaurant .desserts {
   padding-bottom: 40px;
 }
-.menu__desserts .desserts__title {
+.restaurant .desserts .desserts__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -182,7 +174,6 @@ body {
 
 .footer {
   position: relative;
-  top: -20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
