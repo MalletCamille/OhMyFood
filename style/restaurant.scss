@@ -1,3 +1,6 @@
+@use 'header.scss';
+@use 'footer.scss';
+
 //*** Général*** //
 * {
     margin: 0;
@@ -38,33 +41,14 @@ body {
 }
 
 //*** Header *** //
-
 .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     &__icon {
-    position: absolute;
-    left : 25px;
-    top: 20px;
-    font-size: 30px;
-    z-index: 3;
-    }
-    .logo {
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0;
-        padding: 14px 89px 13px 89px ;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)  ;
-        &__img {
-            display: flex;
-            padding: 0 19px 0 16px;
-            width: 162px;
+        position: absolute;
+        left : 25px;
+        top: 13px;
+        font-size: 30px;
+        z-index: 3;
         }
-    }
 }
 
 //*** Section Restaurant ***// 
@@ -178,41 +162,4 @@ body {
         height: 50px;
         margin-top: 40px;
     }
-}
-
-
-
-
-//*** Footer *** //    
-
-.footer {
-    position: relative;
-    $self: &;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 22px 25px;
-    background-color: var(--bg-color-dark-grey);
-    gap: 16px;
-        &__logo {
-            width: 25%;
-            filter: invert(1);
-        }    
-        &__list {
-            gap: 7px;
-            display: flex;
-            flex-direction: column;
-           &-item {
-                gap: 11px;
-                display: flex;
-                flex-direction: row;
-                #{$self}__icon {
-                    filter: invert(1);
-                }    
-                #{$self}__link {
-                    color: white;
-                }
-            }
-        } 
-        
 }

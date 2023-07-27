@@ -1,3 +1,53 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header .logo {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 14px 89px 13px 89px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header .logo__img {
+  display: flex;
+  padding: 0 19px 0 16px;
+  width: 162px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 25px;
+  background-color: var(--bg-color-dark-grey);
+  gap: 16px;
+}
+.footer__logo {
+  width: 25%;
+  filter: invert(1);
+}
+.footer__list {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__list-item {
+  gap: 11px;
+  display: flex;
+  flex-direction: row;
+}
+.footer__list-item .footer__icon {
+  filter: invert(1);
+}
+.footer__list-item .footer__link {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,27 +86,7 @@ body {
   width: 100%;
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.header .logo {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 14px 89px 13px 89px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.header .logo__img {
-  display: flex;
-  padding: 0 19px 0 16px;
-  width: 162px;
-}
-.header .location {
+.location {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,10 +98,10 @@ body {
   width: 100%;
   gap: 17px;
 }
-.header .location__logo {
+.location__logo {
   font-size: 16px;
 }
-.header .location__city {
+.location__city {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -240,35 +270,6 @@ body {
   font-size: 28px;
   right: 30px;
   bottom: 20px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 22px 25px;
-  background-color: var(--bg-color-dark-grey);
-  gap: 16px;
-}
-.footer__logo {
-  width: 25%;
-  filter: invert(1);
-}
-.footer__list {
-  gap: 7px;
-  display: flex;
-  flex-direction: column;
-}
-.footer__list-item {
-  gap: 11px;
-  display: flex;
-  flex-direction: row;
-}
-.footer__list-item .footer__icon {
-  filter: invert(1);
-}
-.footer__list-item .footer__link {
-  color: white;
 }
 
 /******************** Media queries ********************/

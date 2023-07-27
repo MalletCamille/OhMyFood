@@ -1,0 +1,29 @@
+.footer {
+    $self :&;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    background-color: var(--bg-color-dark-grey);
+    gap: 16px;
+        &__logo {
+            width: 25%;
+            filter: invert(1);
+        }    
+        &__list {
+            gap: 7px;
+            display: flex;
+            flex-direction: column;
+           &-item {
+                gap: 11px;
+                display: flex;
+                flex-direction: row;
+                #{$self}__icon {
+                    filter: invert(1);
+                }    
+                #{$self}__link {
+                    color: white;
+                }
+            }
+        }         
+}

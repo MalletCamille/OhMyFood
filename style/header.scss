@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 14px 89px 13px 89px ;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15)  ;
+        &__img {
+            display: flex;
+            padding: 0 19px 0 16px;
+            width: 162px;
+        }
+}   }
