@@ -7,7 +7,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+  
 :root {
     --main-bg-color: #F6F6F6;
     --primary-color: #9356DC;
@@ -194,6 +194,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 95%;
+        max-width: 600px;
         border-radius: 15px;
         background-color: white;
         height: auto;    
@@ -241,11 +242,9 @@ body {
                 font-size: 28px;
                 right: 30px;
                 bottom: 20px;
-            }
-            
+            }            
         }
-    }
-    
+    }    
 }
 
 /******************** Media queries ********************/
@@ -330,30 +329,42 @@ body {
                     }
     }
 
-        //*** Restaurants Section *** //
+     //*** Restaurants Section *** //
 
-        .section-restaurants {
+     .section-restaurants {
+        padding:0px 180px;
+        &__title {
+        
+        }
+        &__container {
             flex-direction: row;
             flex-wrap: wrap;
             gap: 50px 100px;
-            width: 100%;
-            &__title {
-            }
-            &__card {
-                width: 35%;
-                .card {
-                    &__new {
-                    }
-                    &__img {
-                    }
-                    &__title {
-                    }
-                    &__location {
-                    }
-                    &__heart {
-                    }
+            margin-bottom: 30px;
+        }    
+        &__card {
+            width: 35%;
+            .card {
+                &__new {
+       
                 }
+                &__img {
+   
+                }
+                &__title {
+             
+                }
+                &__location {
+               
+                }
+                &__heart {
+             
+                }
+                
             }
         }
-}    
+        
+    }
+
+} 
     
