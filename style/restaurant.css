@@ -23,8 +23,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 22px 25px;
   width: 100%;
+  box-sizing: border-box;
+  padding: 22px 25px;
   background-color: var(--bg-color-dark-grey);
   gap: 16px;
 }
@@ -109,24 +110,35 @@ body {
 }
 
 .restaurant {
-  width: 100%;
+  background-color: var(--main-bg-color);
   position: relative;
   width: 100%;
-  background-color: var(--main-bg-color);
-  padding: 0 10px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurant__img {
   position: relative;
   width: 100%;
   height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-self: stretch;
 }
-.restaurant__title {
+.restaurant__wrapper {
+  width: 100%;
+  background-color: var(--main-bg-color);
   position: relative;
-  top: -20px;
+  top: -25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurant__title {
+  align-self: flex-start;
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   font-weight: 400;
@@ -140,6 +152,9 @@ body {
   top: 370px;
   font-size: 28px;
 }
+.restaurant .starters {
+  width: 100%;
+}
 .restaurant .starters__title {
   width: 38px;
   height: 27px;
@@ -149,7 +164,14 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.restaurant .dishes .dishes__title {
+.restaurant .starters__content {
+  padding: 0 10px;
+}
+
+.dishes {
+  width: 100%;
+}
+.dishes .dishes__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -159,10 +181,15 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.restaurant .desserts {
+.dishes__content {
+  padding: 0 10px;
+}
+
+.desserts {
+  width: 100%;
   padding-bottom: 40px;
 }
-.restaurant .desserts .desserts__title {
+.desserts .desserts__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -171,6 +198,9 @@ body {
   margin-left: 17px;
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
+}
+.desserts__content {
+  padding: 0 10px;
 }
 
 .card {
@@ -213,4 +243,12 @@ body {
   font-weight: 500;
   height: 50px;
   margin-top: 40px;
+}
+
+/* Big devices (Desktop, more than 1024px) */
+@media screen and (min-width: 1024px) {
+  .restaurant__wrapper {
+    max-width: 1055px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=restaurant.css.map */

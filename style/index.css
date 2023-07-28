@@ -23,6 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
   padding: 22px 25px;
   background-color: var(--bg-color-dark-grey);
   gap: 16px;
