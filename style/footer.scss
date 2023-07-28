@@ -27,3 +27,28 @@
             }
         }         
 }
+
+/* Big devices (Desktop, more than 1024px) */
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        $self :&;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+            &__logo {
+
+            }    
+            &__list {
+                gap: 20px;
+                display: flex;
+                flex-direction: row;
+               &-item {
+                    #{$self}__icon {
+                    }    
+                    #{$self}__link {
+                    }
+                }
+            }         
+    }
+}

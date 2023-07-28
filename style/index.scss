@@ -333,8 +333,9 @@ body {
 
      .section-restaurants {
         padding:0px 180px;
+        box-sizing: border-box;
         &__title {
-        
+         
         }
         &__container {
             flex-direction: row;
@@ -343,8 +344,9 @@ body {
             margin-bottom: 30px;
         }    
         &__card {
-            width: 35%;
-            .card {
+            width: calc(50% - 50px);
+            max-width: none;
+            .card { 
                 &__new {
        
                 }

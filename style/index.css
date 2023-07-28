@@ -48,6 +48,19 @@
   color: white;
 }
 
+/* Big devices (Desktop, more than 1024px) */
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+  .footer__list {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -299,6 +312,7 @@ body {
   }
   .section-restaurants {
     padding: 0px 180px;
+    box-sizing: border-box;
   }
   .section-restaurants__container {
     flex-direction: row;
@@ -307,6 +321,7 @@ body {
     margin-bottom: 30px;
   }
   .section-restaurants__card {
-    width: 35%;
+    width: calc(50% - 50px);
+    max-width: none;
   }
 }/*# sourceMappingURL=index.css.map */
