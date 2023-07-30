@@ -137,6 +137,7 @@ body {
   align-items: center;
 }
 .restaurant__title {
+  width: 70%;
   align-self: flex-start;
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
@@ -216,6 +217,7 @@ body {
   margin-bottom: 5px;
 }
 .card__description {
+  width: 80%;
   font-size: 15px;
   font-weight: 300;
 }
@@ -252,6 +254,7 @@ body {
 /* Big devices (Desktop, more than 1024px) */
 @media screen and (min-width: 1024px) {
   .restaurant__title {
+    width: auto;
     align-self: center;
   }
   .restaurant__wrapper {

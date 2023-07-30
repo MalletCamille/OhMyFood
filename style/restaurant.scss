@@ -80,6 +80,7 @@ body {
     }
     
         &__title {
+            width: 70%;
             align-self: flex-start;
             font-family: 'Shrikhand', sans-serif;
             font-size: 28px;
@@ -159,6 +160,7 @@ body {
             margin-bottom: 5px;
         }
         &__description {
+            width: 80%;
             font-size: 15px;
             font-weight: 300;
         }
@@ -195,6 +197,7 @@ body {
 @media screen and (min-width: 1024px) {
     .restaurant {
         &__title {
+            width: auto;
             align-self: center;
         }
         &__wrapper {
