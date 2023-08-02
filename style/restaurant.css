@@ -147,10 +147,48 @@ body {
   padding-bottom: 40px;
 }
 .restaurant__heart {
+  padding: 2px;
   position: absolute;
   right: 42px;
   top: 39px;
   font-size: 28px;
+  z-index: 1;
+  overflow: clip;
+  opacity: 1;
+  font-size: 22px;
+  -webkit-text-stroke: 2px var(--bg-color-dark-grey);
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__heart:hover {
+  font-size: 22px;
+  animation: filling-heart 1.3s forwards;
+}
+@keyframes filling-heart {
+  0% {
+    transform: scale(0.9);
+    -webkit-text-stroke: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  50% {
+    transform: scale(1.4);
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    -webkit-text-stroke: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+    -webkit-text-stroke: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    opacity: 1;
+  }
 }
 .restaurant .starters {
   width: 100%;
@@ -167,11 +205,10 @@ body {
 .restaurant .starters__content {
   padding: 0 10px;
 }
-
-.dishes {
+.restaurant .dishes {
   width: 100%;
 }
-.dishes .dishes__title {
+.restaurant .dishes .dishes__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -181,15 +218,14 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.dishes__content {
+.restaurant .dishes__content {
   padding: 0 10px;
 }
-
-.desserts {
+.restaurant .desserts {
   width: 100%;
   padding-bottom: 40px;
 }
-.desserts .desserts__title {
+.restaurant .desserts .desserts__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
@@ -199,8 +235,19 @@ body {
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.desserts__content {
+.restaurant .desserts__content {
   padding: 0 10px;
+}
+
+.checkmark {
+  background-color: #008766;
+  opacity: 0;
+  animation: disappearance-card 2s;
+}
+.checkmark::before {
+  padding: 0.25rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .card {
@@ -210,6 +257,31 @@ body {
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(15px);
+  animation: appearance-card 3s forwards;
+}
+.card:hover + .checkmark {
+  display: flex;
+  align-self: flex-end;
+  background-color: #008766;
+  color: white;
+}
+@keyframes appearance-card {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+@keyframes disappearance-card {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
 }
 .card__dish-name {
   font-size: 18px;
@@ -227,6 +299,17 @@ body {
   font-weight: 700;
   right: 30px;
   bottom: 18px;
+}
+.card__check {
+  display: none;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  transition: width 0.7s ease;
+  overflow: hidden;
+  background-color: #008766;
 }
 
 .container__order-button {
