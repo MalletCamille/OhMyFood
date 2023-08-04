@@ -129,7 +129,7 @@ body {
   width: 100%;
   background-color: var(--main-bg-color);
   position: relative;
-  top: -25px;
+  margin-top: -25px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   display: flex;
@@ -348,7 +348,6 @@ body {
 
 .footer {
   position: relative;
-  bottom: 25px;
 }
 
 /* Big devices (Desktop, more than 1024px) */
