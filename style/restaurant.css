@@ -144,7 +144,6 @@ body {
   font-weight: 400;
   padding-top: 32px;
   padding-left: 17px;
-  padding-bottom: 40px;
 }
 .restaurant__heart {
   padding: 2px;
@@ -190,52 +189,20 @@ body {
     opacity: 1;
   }
 }
-.restaurant .starters {
+.restaurant .menu {
   width: 100%;
 }
-.restaurant .starters__title {
-  width: 38px;
-  height: 27px;
-  font-size: 16px;
-  font-weight: 300;
-  margin-left: 17px;
-  border-bottom: var(--bg-color-green) 2px solid;
-  border-bottom-width: 3px;
-}
-.restaurant .starters__content {
-  padding: 0 10px;
-}
-.restaurant .dishes {
-  width: 100%;
-}
-.restaurant .dishes .dishes__title {
-  width: 38px;
-  height: 27px;
-  font-size: 16px;
-  font-weight: 300;
+.restaurant .menu__title {
   margin-top: 40px;
-  margin-left: 17px;
-  border-bottom: var(--bg-color-green) 2px solid;
-  border-bottom-width: 3px;
-}
-.restaurant .dishes__content {
-  padding: 0 10px;
-}
-.restaurant .desserts {
-  width: 100%;
-  padding-bottom: 40px;
-}
-.restaurant .desserts .desserts__title {
   width: 38px;
   height: 27px;
   font-size: 16px;
   font-weight: 300;
-  margin-top: 40px;
   margin-left: 17px;
   border-bottom: var(--bg-color-green) 2px solid;
   border-bottom-width: 3px;
 }
-.restaurant .desserts__content {
+.restaurant .menu__content {
   padding: 0 10px;
 }
 
@@ -292,7 +259,7 @@ body {
   padding: 15px;
   flex-grow: 1;
 }
-.card__dish-name {
+.card__name {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -326,6 +293,7 @@ body {
 .container__order-button {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .container__order-button .order-button {
   border-radius: 25px;
