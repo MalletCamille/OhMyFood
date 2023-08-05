@@ -375,54 +375,17 @@ body {
 /******************** Media queries ********************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (min-width: 770px) {
-    //*** Main Title and Exploration Section *** //
-    .section-exploration {
-        &__button {
-        }    
-    }
     //*** Functioning Section *** //
 
-    .section-functioning {
-        &__title {
-        }    
+    .section-functioning {  
         &__wrapper {
                 width: 100%;
             }  
-            &__container {
-            }     
-                &__badge {
-                }  
-                &__badge-txt {
-                } 
-                &__button {     
-    
-                }
-                    &__icon {
-                    
-                        &--purple {
-                        }
-                    }
     }
-
-    //*** Restaurants Section *** //
-    .section-restaurants {
-
-        &__card {
-
-        }
-    }
-
-}
+}    
 
 /* Big devices (Desktop, more than 1024px) */
 @media screen and (min-width: 1024px) {
-
-    //*** Main Title and Exploration Section *** //
-    .section-exploration {
-        &__button {
-
-        }    
-    }
 
       //*** Functioning Section *** //
 
@@ -434,24 +397,6 @@ body {
         &__wrapper {
             flex-direction: row;
             }  
-            &__container {
-            
-            }     
-                &__badge {
-        
-                }  
-                &__badge-txt {
-   
-                } 
-                &__button {           
-              
-                }
-                    &__icon {
-          
-                        &--purple {
-                       
-                        }
-                    }
     }
 
      //*** Restaurants Section *** //
@@ -471,27 +416,7 @@ body {
         &__card {
             width: calc(50% - 50px);
             max-width: none;
-            .card { 
-                &__new {
-       
-                }
-                &__img {
-   
-                }
-                &__title {
-             
-                }
-                &__location {
-               
-                }
-                &__heart {
-             
-                }
-                
-            }
         }
-        
     }
-
 } 
     
