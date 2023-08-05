@@ -45,6 +45,7 @@ body {
 .loader {
     &__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,6 +64,7 @@ body {
         font-family: 'Shrikhand', sans-serif;
         font-size: 28px;
         animation: blink 3s infinite;
+        text-align: center;
     }
     &__spinner {
     --d:50px;
@@ -89,6 +91,7 @@ body {
     opacity: 0.8;
     margin-top: 100px;
     font-weight: 200;
+    text-align: center;
   }
 }  
 
@@ -172,9 +175,9 @@ body {
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
             background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
             margin-bottom: 57px;
-            min-width: 200px;
             max-width: 288px;
             height: 50px;
+            padding: 0px 15px;
             border: none;
             color: white;
             font-size: 16px;
