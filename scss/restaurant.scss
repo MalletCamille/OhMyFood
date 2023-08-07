@@ -1,44 +1,9 @@
 @use 'header.scss';
 @use 'footer.scss';
+@use 'colors.scss';
+@use 'main.scss';
+@use 'fonts.scss';
 
-//*** Général*** //
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-:root {
-    --main-bg-color: #F6F6F6;
-    --primary-color: #9356DC;
-    --bg-color-green: #99e2d0;
-    --bg-color-blue: #89c8fa;
-    --bg-color-dark-grey: #353535;
-    --bg-color-grey-2 : #Eaeaea; 
-    --bg-color--dark-blue: #003a68;
-    --green-font: #008766;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-ul {
-    padding-inline-start: 0em;
-    margin-block-start: 0;
-}
-
-li {
-    list-style: none;
-}
-
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 
 //*** Header *** //
 .header {
@@ -100,8 +65,8 @@ body {
             font-size: 22px;
             -webkit-text-stroke: 2px var(--bg-color-dark-grey);
             background: white;
-            -webkit-background-clip: text;
             background-clip: text;
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             &:hover {
                 font-size: 22px;
