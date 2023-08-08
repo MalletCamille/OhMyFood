@@ -148,9 +148,13 @@ body {
 }
 
 @keyframes fade-out {
-  to {
+  99% {
     opacity: 0;
-    display: none;
+    width: 100vw;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
   }
 }
 @keyframes blink {
