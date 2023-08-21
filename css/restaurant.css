@@ -213,22 +213,6 @@ body {
   font-size: 25px;
 }
 
-@keyframes check-on {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
-}
-@keyframes check-off {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0;
-  }
-}
 .card {
   display: flex;
   flex-direction: row;
