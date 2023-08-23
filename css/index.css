@@ -192,6 +192,9 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  outline: none;
+  border: none;
+  background: none;
 }
 
 .section-exploration {
